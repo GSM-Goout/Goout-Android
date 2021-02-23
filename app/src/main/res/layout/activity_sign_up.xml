@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.LoginActivity"
+    tools:context=".view.activity.SignUpActivity"
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,19 +13,19 @@
         android:layout_weight="4">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageview3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_goout_signin_text" />
+            app:srcCompat="@drawable/ic_goout_signup_text" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_weight="1"
-        android:background="@drawable/ic_goout_login_theme"
+        android:background="@drawable/ic_goout_signup_theme"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -63,17 +63,31 @@
                     android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#787878"
                 android:gravity="start"
+                android:textSize="8dp"
                 android:background="#00ff0000"
-                android:text="비밀번호 찾기" />
+                android:text="비밀번호는 8~16자 사이여야되며, 특수문자를 포함해야합니다." />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Check Password"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_marginTop="30dp"
-                android:background="@drawable/ic_goout_login"
+                android:background="@drawable/ic_goout_signup_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -83,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             android:background="#00ff0000"
-            android:text="아직 계정이 없으신가요?"
+            android:text="이미 계정이 있으신가요?"
             android:textColor="#000000"
             android:textSize="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
