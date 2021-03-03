@@ -59,6 +59,32 @@
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="담당 학년과 반을 선택해주세요." />
+
+            <LinearLayout
+                android:id="@+id/spinner_linear"
+                android:layout_marginTop="36dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/select_grade_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_goout_spinner_background"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="27dp"/>
+
+                <Spinner
+                    android:id="@+id/select_grade_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_goout_spinner_background"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="27dp"/>
+            </LinearLayout>
         </LinearLayout>
 
 
